@@ -15,9 +15,9 @@ h2 {
     font-size: 20px;
 }
 
-h4 {
+h3 {
     color: darkslategray;
-    font-size: 10px;
+    font-size: .8em;
 }
 a:visited {
     color: brown;
