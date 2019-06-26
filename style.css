@@ -15,6 +15,10 @@ h2 {
     font-size: 20px;
 }
 
+h2 {
+    color: darkslategray;
+    font-size: 10px;
+}
 a:visited {
     color: brown;
     padding: 2px 2px 2px 2px;
