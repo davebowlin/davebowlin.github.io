@@ -1,0 +1,32 @@
+body {
+    color: #000000;
+    background-color: burlywood;
+    font-size: 16px;
+}
+
+h1 {
+    color: black;
+    font-size: 26px;
+    border-bottom: 2px ridge red;
+}
+
+h2 {
+    color: darkslategray;
+    font-size: 20px;
+}
+
+a:visited {
+    color: brown;
+    padding: 2px 2px 2px 2px;
+}
+
+a:link {
+    text-decoration: none;
+    padding: 2px 2px 2px 2px; 
+}
+
+a:hover {
+    color: greenyellow;
+    background-color: darkslategray;
+    padding: 2px 2px 2px 2px;
+}
