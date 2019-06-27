@@ -1,36 +1,52 @@
 body {
     color: #000000;
-    background-color: burlywood;
+    background-color: white;  /* i do not like this color, but it works for now */
     font-size: 16px;
 }
 
 h1 {
     color: black;
     font-size: 26px;
-    border-bottom: 2px ridge red;
+    padding: 2px 2px 2px 2px;
+    text-transform: uppercase;
 }
 
 h2 {
     color: darkslategray;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 h4 {
     color: darkslategray;
-    font-size: 12px;
+    font-size: 10px;
+    text-transform: uppercase;  /* not working */
 }
 a:visited {
-    color: brown;
+    color: silver;
     padding: 2px 2px 2px 2px;
 }
 
 a:link {
+    color: aliceblue;
     text-decoration: none;
     padding: 2px 2px 2px 2px; 
 }
 
 a:hover {
-    color: greenyellow;
-    background-color: darkslategray;
+    color: blue;
+    background-color: aliceblue;
     padding: 2px 2px 2px 2px;
+}
+
+li {
+    display: inline-block;  /* i don't want the bullet dots in the lists, so put it all on the same line */
+    background-color: blue;
+    padding: 10px;
+    color: aliceblue;  /* this doesn't work, i think because the a:link overrides it, unsure how to fix this yet */
+    text-transform: uppercase; /* our list items to uppercase */;
+}
+
+li:hover {
+    background-color: aliceblue; /* make the entire box backround same as a:hover background */
 }
