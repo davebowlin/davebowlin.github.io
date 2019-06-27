@@ -9,8 +9,8 @@
         <!-- put content here -->
         <table style="margin: 0px auto;">
         <tr><td><img src="logo_trans.png" alt="David Bowlin"><br /></td></tr>
-        <tr><td><h1>social hub</h1></td></tr>     
-        <tr><td><p>Over 7 billion people on the planet, and you want to know about me?<br/>That's humbling and flattering.</td></tr>
+        <tr><td><h1>Tell me a bit about yourself</h1></td></tr>     
+        <tr><td><p>Over 7 billion people on the planet, and I want to know about you!<br/>Leave a messsage below.</td></tr>
         </p>
         <tr><td width=100% bgcolor="blue"><ul>
             <!-- don't close the list until the last one to prevent spaces between the blocks -->
@@ -20,12 +20,37 @@
             <li><a href="other.html">Other</a>
             <li><a href="comments.html">Let's Talk</a></li>
           </ul></td></tr>
+
+          <tr><td>
+              <p>The comments section will be here, when it's finished. Until then, enjoy your day.
+              </p>
+          </td></tr>
         <tr><td>
-        <p>Coming soon to this area:  A comments section so I can get to know you a little bit.</p>
-        <p>Until then, enjoy this brilliant artwork of King Conan, by Sebastian Grenier!</p>
-        <p><img src="kingconan.jpg" alt="King Conan, by Sebastian Grenier" align="middle"></p>    
-    </td></tr>
+        <!-- form goes here to allow leaving a comment -->
+        <!-- Script goes here to load the previous comments. I'm unsure how to load a text file from the server using JS to display -->
+        <!-- I guess I could use an inline HTML frame, but that seems very tacky -->
+
+        <script> /* this script combines the month and calendar day to a string, compares it to July 3 (63), and wishes me a happy birthday if it matches */
+        /* ckdate variable below is the result of how JS detects the month and calendar day. Months are 0-11, so July is 6, and my birthday is 3rd, so its "63" as a string */
+        var today = new Date();
+        let mnth = today.getMonth().toString();
+        let numday = today.getDate().toString();
+        var ckdate = mnth + numday;
+        if(ckdate == "63") {
+            alert("Happy birthday to me! Yes, it's my birthday :)")
+            document.write("<p align='center'><font size=4 color='blue'>HAPPY BIRTHDAY TO ME!</font></p>");
+        }
+        </script>
+
+        <script> /* this script calculates the milliseconds to days that I've been alive, and displays it */
+         let now = new Date(); /* this is the current date and time, based on the local device */
+         let bday = new Date("Jul 3, 1970 22:30:00");  /* my birthday, including the time (according to my mother!) */
+         var result = Math.abs(now - bday); /* JS time difference is in milliseconds, so divide the result by milliseconds in 24 hours */
+         var howmanydays = Math.floor(result / 86400000); /* milliseconds to 24 hours (days) */
+         let str = "<p>So far, I have been alive for <strong>" + howmanydays + "</strong> days as of today, if I'm still alive. <br/>If I'm not, well, it was fun while it lasted!</p>"
+         document.write(str);
+        </script>
+        </td></tr>
     </table>
-    
     </body>
 </html>
