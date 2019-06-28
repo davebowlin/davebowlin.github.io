@@ -9,27 +9,18 @@
         <!-- put content here -->
         <table style="margin: 0px auto;">
         <tr><td><img src="logo_trans.png" alt="David Bowlin"><br /></td></tr>
-        <tr><td><h1>Tell me a bit about yourself</h1></td></tr>     
-        <tr><td><p>Over 7 billion people on the planet, and I want to know about you!<br/>Leave a messsage below.</td></tr>
+        <tr><td><h1>A simple script or two</h1></td></tr>     
+        <tr><td><p>This page contains the first two scripts I've written in JavaScript.<br/>They're simple, but I like them.</td></tr>
         </p>
         <tr><td width=100% bgcolor="blue"><ul>
             <!-- don't close the list until the last one to prevent spaces between the blocks -->
             <li><a href="index.html">Home</a>
-            <li><a href="basics.html">Basics</a>
-            <li><a href="details.html">Details</a>
+            <li><a href="whylearn.html">Why Learn</a>
+            <li><a href="reasons.html">Reasons</a>
             <li><a href="other.html">Other</a>
-            <li><a href="comments.html">Let's Talk</a></li>
+            <li><a href="scripts.html">Scripts</a></li>
           </ul></td></tr>
-
-          <tr><td>
-              <p>The comments section will be here, when it's finished. Until then, enjoy your day.
-              </p>
-          </td></tr>
         <tr><td>
-        <!-- form goes here to allow leaving a comment -->
-        <!-- Script goes here to load the previous comments. I'm unsure how to load a text file from the server using JS to display -->
-        <!-- I guess I could use an inline HTML frame, but that seems very tacky -->
-
         <script> /* this script combines the month and calendar day to a string, compares it to July 3 (63), and wishes me a happy birthday if it matches */
         /* ckdate variable below is the result of how JS detects the month and calendar day. Months are 0-11, so July is 6, and my birthday is 3rd, so its "63" as a string */
         var today = new Date();
@@ -50,7 +41,16 @@
          let str = "<p>So far, I have been alive for <strong>" + howmanydays + "</strong> days as of today, if I'm still alive. <br/>If I'm not, well, it was fun while it lasted!</p>"
          document.write(str);
         </script>
+        <p>There are two simple JavaScript scripts on this page. You can view or download them here:
+        </p>
+        <p>
+        <ul>
+                <a href="hba_script.js"><li>Happy Birthday Alert</a>
+                <a href="daysalive_script.js"><li>Days I've Been Alive</li></a><br />
+        </ul>
+    </p>
         </td></tr>
+        <tr><td><img src="kingconan.jpg" alt="King Conan"><br/>King Conan demands that you have a good day.</td></tr>
     </table>
     </body>
 </html>
