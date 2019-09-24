@@ -20,4 +20,4 @@ This is a very enjoyable experience and I look forward to learning it in depth.
 
 I really like [Battle.Net's](https://www.battle.net) color palette, shown below.
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Battle.NEet's color palette")
+![alt text](https://github.com/davebowlin/davebowlin.github.io/blob/master/battlenet.JPG "Battle.NEet's color palette")
