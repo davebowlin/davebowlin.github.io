@@ -1,5 +1,5 @@
 # David Bowlin
-Capstone Website (cloned from www.davebowlin.net)
+Simple website about me
 
 ## This is part of the _Vets Who Code_ pre-work
 

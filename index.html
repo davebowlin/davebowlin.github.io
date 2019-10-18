@@ -1,27 +1,77 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- put metadata here-->
-        <title>David Bowlin: A brief introduction</title>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    <body>
-        <!-- put content here -->
-        <table style="margin: 0px auto;">
-        <tr><td><img src="logo_trans.png" alt="David Bowlin"><br /></td></tr>
-        <tr><td><h1>#vetswhocode</h1></td></tr>     
-        <tr><td><p>Over 7 billion people on the planet, and you have found me.<br/>That's humbling and flattering.</td></tr>
-        </p>
-        <tr><td width=100% bgcolor="blue"><ul>
-            <!-- don't close the list until the last one to prevent spaces between the blocks -->
-            <li><a href="index.html">Home</a>
-                <li><a href="whylearn.html">Why Learn</a>
-                <li><a href="reasons.html">Reasons</a>
-                <li><a href="other.html">Other</a>
-                <li><a href="scripts.html">Scripts</a></li>
-          </ul></td></tr>
-        <tr><td align="center"><h4>This is me. Impressed?</h4>
-            <img src="me.jpg" alt="David Bowlin"></td></tr>
-    </table>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dave Bowlin, Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="logo"><img src="images/logo.png" alt="Dave Bowlin"></div>
+    <div id="navbar">
+        <div id="navlinks">
+        <nav>
+        <ul id="navlist">
+        <li><a href="#home" onmouseover="showHome();">home</a></li>
+        <li><a href="#projects" onmouseover="showProjects();">projects</a></li>
+        <li><a href="#vets" onmouseover="showVets();">#vetswhocode</a></li>
+        <li><a href="#info" onmouseover="showInfo();">info</a></li>
+        <li><a href="#contact" onmouseover="showContact();">contact</a></li>
+        </ul>
+        </nav>
+        </div>
+    </div>
+    <a name="home"></a><div id="home"></div>
+    <a name="projects"></a><div id="projects">Current Projects<hr>
+        <ul>
+            <li>Auto Scheduler Pro</li>
+            <p id="desc">In active development. Private Git repository.</p>
+            <P> </P>
+            <li><a href="https://github.com/davebowlin/Initiative-Tracker" target="_blank">TTRPG Initiative tracker</a></li>
+            <p id="desc">PC-based initiative tracker for any table-top role-playing game.</p>
+            <P> </P>
+            <li><a href="https://github.com/davebowlin/TimeClock-3.xx" target="_blank">PC Time Clock</a></li>
+            <p id="desc">PC-based time clock software for small businesses. Lots of features.</p>
+            <P> </P>
+            <li><a href="https://github.com/davebowlin/InputBox" target="_blank">InputBox for C-Sharp</a></li>
+            <p id="desc">DLL replacement for the now-defunct InputBox from Visual Basic.</p>
+        </ul>
+    </div>
+    <a name="vets"></a><div id="vets">#VETSWHOCODE
+        <p id="basicinfo">I am currently a student in the #vetswhocode program. In this program, we are learning web development by masters in the field.</p>
+        <p id="basicinfo">#vetswhocode is a non-profit organization started by Jerome Hardaway, himself a veteran. He is also one of the instructors.</p>
+        <p id="basicinfo">For more information, become a student, donate, or to get involved, visit the <a href="https://vetswhocode.io/" target="_blank">#vetswhocode website.</a></p>
+    </div>
+    <a name="info"></a><div id="info">Information / About Me<hr>
+        <p id="plaintext">My name shouldn't be too hard to figure out, seeing that it's in my web address, and the top of this page. I am a 10-year veteran of the USAF.</p>
+        <img src="images/ac130.png" alt="AC-130 Gunship">
+        <p id="plaintext">Software development has been my passion for many years, and have experience in .NET framework (C#, VB), as well as C, C++, Pascal / Turbo Pascal, and many others.</p>
+        <p id="plaintext">Currently, I am focusing on web development with HTML, CSS, JavaScript, and React.</p>
+        <img src="images/wow.png" alt="For The Horde!">
+        <p id="plaintext">I enjoy playing with my grandkids, Dungeons and Dragons, World of Warcraft, and many other computer and console games. PlayStation > XBox (but both are good).</p>
+        <p id="plaintext">If you are wondering what I look like, that blue flaming picture on the home section is really me. Except I'm not currently on fire (of any color).</p>
+    </div>
+    <a name="contact"></a>
+    <div id="contact">Contact Me<br /><hr>
+        <p id="plaintext"><div align: center>Have a comment, question, or suggestion?<br />All fields are required. Thank you.</div></p>
+        <form id="contactform" method="POST" name="contactform" action="send.php"> 
+            <p>
+            <label for='name'>Your Name:</label><br>
+            <input type="text" name="name" required>
+            </p>
+            <p>
+            <label for='email'>Email Address:</label> <br>
+            <input type="text" name="email" required> <br>
+            </p>
+            <p>
+            <label for='message'>Message:</label> <br>
+            <textarea name="message" required></textarea>
+            </p>
+            <input type="submit" value="Send Your Comments" onclick="clearForm();">
+        </form>
+    </div>
+    <div class="footer">Copyright © 2019 Dave Bowlin</div>
+</body>
 </html>

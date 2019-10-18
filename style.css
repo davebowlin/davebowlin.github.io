@@ -1,52 +1,208 @@
-body {
-    color: #000000;
-    background-color: white;  /* i do not like this color, but it works for now */
-    font-size: 16px;
-}
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 
-h1 {
-    color: black;
-    font-size: 26px;
-    padding: 2px 2px 2px 2px;
-    text-transform: uppercase;
-}
+body{
+    margin:0 auto;
+    background: rgb(214, 214, 214);
+    font: bold 12px/25px Arial, Helvetica;
+    }
 
-h2 {
-    color: darkslategray;
-    font-size: 20px;
-    text-transform: uppercase;
-}
+#projects{display: none;}
+#vets{display: none;}
+#info{display: none;}
+#contact{display: none;}
 
-h4 {
-    color: darkslategray;
-    font-size: 10px;
-    text-transform: uppercase;  /* not working */
-}
-a:visited {
-    color: silver;
-    padding: 2px 2px 2px 2px;
-}
-
+/* unvisited link */
 a:link {
-    color: aliceblue;
+    color: navy;
     text-decoration: none;
-    padding: 2px 2px 2px 2px; 
+  }
+  
+/* visited link */
+a:visited {
+    color: navy;
 }
 
+/* mouse hover link */
 a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: navy;
+}
+
+#logo{
+    margin:5px;
+    width:100%; 
+    }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: black;
+    color: #999;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#navbar{
+    width:100%;
+    height:50px;
+    display:table;
+    margin:auto;
+    }
+
+#navlinks ul {
+    display:table;
+    border-collapse:collapse;
+    width:100%;
+    margin:0 0 20px;
+    padding:0;
+    list-style:none;
+    }
+
+#navlinks li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+    width:20%;
+    background: linear-gradient(to right, #111 50%, rgb(167, 227, 255) 50%);
+    background-size: 200% 100%;
+    background-position:left top;
+    transition:all 1s ease;
+    -webkit-transition-delay:all 1s ease;
+    -moz-transition-delay:all 1s ease;
+    -ms-transition-delay:all 1s ease;
+    -o-transition-delay:all 1s ease;
+    }
+
+#navlinks li:hover{
+    background-position:right top;
+    }
+
+#navlinks a {
+    text-decoration:none;
+    color: #999;
+    text-transform: uppercase;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    font: bold 12px/25px Arial, Helvetica;
+    transition:all 1s ease;
+    -webkit-transition-delay:all 1s ease;
+    -moz-transition-delay:all 1s ease;
+    -ms-transition-delay:all 1s ease;
+    -o-transition-delay:all 1s ease;
+    }
+    
+#navlinks a:hover{
+    color:black;
+    }
+
+#home {
+    margin: 0 auto;
+    background-image: url('images/me.gif');
+    border: 2px solid #000;
+    width: 180px;
+    height: 340px;
+    -webkit-animation: fadein 2s;
+    animation: fadein 2s;
+    }
+
+#comingsoon {
+    font-family: 'Indie Flower', cursive;
+    font-size: 3em;
+    color: black;
+    text-align: center;
+}
+
+#projects, #info, #contact {
+    position: relative;
+    background: rgb(167, 227, 255);
+    color: black;
+    border: 2px solid #000;
+    width:70%;
+    margin:0 auto 40px;
+    padding:20px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+#projects ul {
+    list-style: none;
+}
+
+#vets {
+    position: relative;
+    background: rgb(253, 0, 0);
+    color: white;
+    border: 4px solid blue;
+    width:70%;
+    margin:0 auto;
+    padding:20px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#desc {
+    width: 50%;
+    height: auto;
+    background:#ffd9cca1;
+    border: 1px dotted black;
+    color:black;
+    margin:0 auto;
+    font-size: .65em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#basicinfo {
+    width: 75%;
+    color:white;
+    margin:0 auto;
+    text-align: left;
+    padding:15px;
+}
+
+#basincinfo:hover,
+#basicinfo:hover a {
+    color: black;
+    font-weight: bold;
+}
+
+#plaintext {
+    width: 75%;
+    color:black;
+    margin:0 auto;
+    text-align: left;
+    padding:10px;
+}
+
+.thanks-container {
+    text-align: center;
+    vertical-align: middle;
+}
+.thanks {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Indie Flower', cursive;
     color: blue;
-    background-color: aliceblue;
-    padding: 2px 2px 2px 2px;
-}
-
-li {
-    display: inline-block;  /* i don't want the bullet dots in the lists, so put it all on the same line */
-    background-color: blue;
-    padding: 10px;
-    color: aliceblue;  /* this doesn't work, i think because the a:link overrides it, unsure how to fix this yet */
-    text-transform: uppercase; /* our list items to uppercase */;
-}
-
-li:hover {
-    background-color: aliceblue; /* make the entire box backround same as a:hover background */
+    font-weight: bold;
+    padding:10px;
+    font-size: 7em;
 }
