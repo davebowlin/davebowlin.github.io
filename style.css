@@ -109,8 +109,8 @@ a:active {
     border: 2px solid #000;
     width: 180px;
     height: 340px;
-    -webkit-animation: fadein 2s;
-    animation: fadein 2s;
+    -webkit-animation: fadein 3s;
+    animation: fadein 3s;
     }
 
 #comingsoon {
@@ -126,12 +126,12 @@ a:active {
     color: black;
     border: 2px solid #000;
     width:70%;
-    margin:0 auto 40px;
+    margin:0 auto;
     padding:20px;
     text-align: center;
     vertical-align: middle;
-    -webkit-animation: fadein 2s;
-    animation: fadein 2s;
+    -webkit-animation: fadein 3s;
+    animation: fadein 3s;
 }
 
 #projects ul {
@@ -148,8 +148,8 @@ a:active {
     padding:20px;
     text-align: center;
     vertical-align: middle;
-    -webkit-animation: fadein 2s;
-    animation: fadein 2s;
+    -webkit-animation: fadein 3s;
+    animation: fadein 3s;
 }
 
 @-webkit-keyframes fadein {
@@ -160,13 +160,11 @@ a:active {
 #desc {
     width: 50%;
     height: auto;
-    background:#ffd9cca1;
+    background:#999;
     border: 1px dotted black;
     color:black;
     margin:0 auto;
     font-size: .65em;
-    text-align: center;
-    vertical-align: middle;
 }
 
 #basicinfo {
@@ -196,7 +194,7 @@ a:active {
     vertical-align: middle;
 }
 .thanks {
-    height: 10em;
+    height: 7em;
     display: flex;
     align-items: center;
     justify-content: center;

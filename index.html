@@ -14,17 +14,18 @@
         <div id="navlinks">
         <nav>
         <ul id="navlist">
-        <li><a href="#home" onmouseover="showHome();">home</a></li>
-        <li><a href="#projects" onmouseover="showProjects();">projects</a></li>
-        <li><a href="#vets" onmouseover="showVets();">#vetswhocode</a></li>
-        <li><a href="#info" onmouseover="showInfo();">info</a></li>
-        <li><a href="#contact" onmouseover="showContact();">contact</a></li>
+        <li><a href="#home" onclick="showHome();">home</a></li>
+        <li><a href="#projects" onclick="showProjects();">projects</a></li>
+        <li><a href="#vets" onclick="showVets();">#vetswhocode</a></li>
+        <li><a href="#info" onclick="showInfo();">info</a></li>
+        <li><a href="#contact" onclick="showContact();">contact</a></li>
         </ul>
         </nav>
         </div>
     </div>
     <a name="home"></a><div id="home"></div>
-    <a name="projects"></a><div id="projects">Current Projects<hr>
+    <a name="projects"></a>
+    <div id="projects">Current Projects<hr>
         <ul>
             <li>Auto Scheduler Pro</li>
             <p id="desc">In active development. Private Git repository.</p>
@@ -39,12 +40,14 @@
             <p id="desc">DLL replacement for the now-defunct InputBox from Visual Basic.</p>
         </ul>
     </div>
-    <a name="vets"></a><div id="vets">#VETSWHOCODE
+    <a name="vets"></a>
+    <div id="vets">#VETSWHOCODE
         <p id="basicinfo">I am currently a student in the #vetswhocode program. In this program, we are learning web development by masters in the field.</p>
         <p id="basicinfo">#vetswhocode is a non-profit organization started by Jerome Hardaway, himself a veteran. He is also one of the instructors.</p>
         <p id="basicinfo">For more information, become a student, donate, or to get involved, visit the <a href="https://vetswhocode.io/" target="_blank">#vetswhocode website.</a></p>
     </div>
-    <a name="info"></a><div id="info">Information / About Me<hr>
+    <a name="info"></a>
+    <div id="info">Information / About Me<hr>
         <p id="plaintext">My name shouldn't be too hard to figure out, seeing that it's in my web address, and the top of this page. I am a 10-year veteran of the USAF.</p>
         <img src="images/ac130.png" alt="AC-130 Gunship">
         <p id="plaintext">Software development has been my passion for many years, and have experience in .NET framework (C#, VB), as well as C, C++, Pascal / Turbo Pascal, and many others.</p>
@@ -72,6 +75,13 @@
             <input type="submit" value="Send Your Comments" onclick="clearForm();">
         </form>
     </div>
-    <div class="footer">Copyright © 2019 Dave Bowlin</div>
+    <div class="footer">
+        <script>
+            var d = new Date();
+            var y = d.getFullYear();
+            document.getElementById("year").innerHTML = y;
+        </script>
+        Copyright © <span id="year"></span>  Dave Bowlin
+    </div>
 </body>
 </html>

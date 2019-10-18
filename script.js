@@ -77,7 +77,7 @@ function showDesc() {
 function copyright() {
     var d = new Date();
     var n = d.getFullYear();
-    document.getElementById("cpy").innerHTML = n;
+    document.getElementById("n").innerHTML = n;
 }
 
 function clearForm() {
